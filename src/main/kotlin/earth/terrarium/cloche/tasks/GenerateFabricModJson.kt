@@ -202,7 +202,7 @@ abstract class GenerateFabricModJson : DefaultTask() {
                 }
 
                 if (suggests.isNotEmpty()) {
-                    put("suggests", JsonObject(suggests.mapValues { (_, value) -> JsonPrimitive(value) }))
+                    put("recommends", JsonObject(suggests.mapValues { (_, value) -> JsonPrimitive(value) }))
                 }
             }
 
